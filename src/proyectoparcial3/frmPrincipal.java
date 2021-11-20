@@ -34,7 +34,7 @@ public class frmPrincipal extends javax.swing.JFrame {
         btnBorrar = new javax.swing.JButton();
         btnResiduo = new javax.swing.JButton();
         btnRaizCu = new javax.swing.JButton();
-        btnLog = new javax.swing.JButton();
+        btnLogaritmoEnBase10 = new javax.swing.JButton();
         btnDivision = new javax.swing.JButton();
         btnCoseno = new javax.swing.JButton();
         btnTangente = new javax.swing.JButton();
@@ -63,7 +63,7 @@ public class frmPrincipal extends javax.swing.JFrame {
         rbOctal = new javax.swing.JRadioButton();
         rbBinario = new javax.swing.JRadioButton();
         btnSeno = new javax.swing.JButton();
-        btnIn = new javax.swing.JButton();
+        btnLogaritmoNeperiano = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Calculadora - Víctor Antonio");
@@ -118,14 +118,14 @@ public class frmPrincipal extends javax.swing.JFrame {
             }
         });
 
-        btnLog.setBackground(new java.awt.Color(51, 51, 51));
-        btnLog.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        btnLog.setForeground(new java.awt.Color(255, 255, 255));
-        btnLog.setText("log");
-        btnLog.setPreferredSize(new java.awt.Dimension(55, 30));
-        btnLog.addActionListener(new java.awt.event.ActionListener() {
+        btnLogaritmoEnBase10.setBackground(new java.awt.Color(51, 51, 51));
+        btnLogaritmoEnBase10.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        btnLogaritmoEnBase10.setForeground(new java.awt.Color(255, 255, 255));
+        btnLogaritmoEnBase10.setText("log");
+        btnLogaritmoEnBase10.setPreferredSize(new java.awt.Dimension(55, 30));
+        btnLogaritmoEnBase10.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnLogActionPerformed(evt);
+                btnLogaritmoEnBase10ActionPerformed(evt);
             }
         });
 
@@ -437,14 +437,14 @@ public class frmPrincipal extends javax.swing.JFrame {
             }
         });
 
-        btnIn.setBackground(new java.awt.Color(51, 51, 51));
-        btnIn.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        btnIn.setForeground(new java.awt.Color(255, 255, 255));
-        btnIn.setText("In");
-        btnIn.setPreferredSize(new java.awt.Dimension(55, 30));
-        btnIn.addActionListener(new java.awt.event.ActionListener() {
+        btnLogaritmoNeperiano.setBackground(new java.awt.Color(51, 51, 51));
+        btnLogaritmoNeperiano.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        btnLogaritmoNeperiano.setForeground(new java.awt.Color(255, 255, 255));
+        btnLogaritmoNeperiano.setText("In");
+        btnLogaritmoNeperiano.setPreferredSize(new java.awt.Dimension(55, 30));
+        btnLogaritmoNeperiano.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnInActionPerformed(evt);
+                btnLogaritmoNeperianoActionPerformed(evt);
             }
         });
 
@@ -516,7 +516,7 @@ public class frmPrincipal extends javax.swing.JFrame {
                                     .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
                                         .addComponent(btnCoseno, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                        .addComponent(btnIn, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                        .addComponent(btnLogaritmoNeperiano, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                                     .addGroup(layout.createSequentialGroup()
                                         .addComponent(btnDivision, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
@@ -524,7 +524,7 @@ public class frmPrincipal extends javax.swing.JFrame {
                                     .addGroup(layout.createSequentialGroup()
                                         .addComponent(btnTangente, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                        .addComponent(btnLog, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                        .addComponent(btnLogaritmoEnBase10, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                                 .addGap(18, 18, 18)
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addGroup(layout.createSequentialGroup()
@@ -592,10 +592,10 @@ public class frmPrincipal extends javax.swing.JFrame {
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(btnCoseno, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(rbHexadecimal, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(btnIn, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(btnLogaritmoNeperiano, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(btnLog, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(btnLogaritmoEnBase10, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(btnTangente, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(rbOctal, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -681,13 +681,13 @@ public class frmPrincipal extends javax.swing.JFrame {
         txtResultados.setText(String.valueOf(Math.tan(x)));
     }//GEN-LAST:event_btnTangenteActionPerformed
 
-    private void btnInActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnInActionPerformed
+    private void btnLogaritmoNeperianoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnLogaritmoNeperianoActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_btnInActionPerformed
+    }//GEN-LAST:event_btnLogaritmoNeperianoActionPerformed
 
-    private void btnLogActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnLogActionPerformed
+    private void btnLogaritmoEnBase10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnLogaritmoEnBase10ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_btnLogActionPerformed
+    }//GEN-LAST:event_btnLogaritmoEnBase10ActionPerformed
 
     private void jButton9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton9ActionPerformed
         // TODO add your handling code here:
@@ -824,9 +824,9 @@ public class frmPrincipal extends javax.swing.JFrame {
     private javax.swing.JButton btnDivision;
     private javax.swing.JButton btnDos;
     private javax.swing.JButton btnIgual;
-    private javax.swing.JButton btnIn;
     private javax.swing.JButton btnInverso;
-    private javax.swing.JButton btnLog;
+    private javax.swing.JButton btnLogaritmoEnBase10;
+    private javax.swing.JButton btnLogaritmoNeperiano;
     private javax.swing.JButton btnMasMenos;
     private javax.swing.JButton btnMultiplicacion;
     private javax.swing.JButton btnNueve;

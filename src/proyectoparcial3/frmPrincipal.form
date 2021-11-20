@@ -101,7 +101,7 @@
                                   <Group type="102" alignment="0" attributes="0">
                                       <Component id="btnCoseno" min="-2" max="-2" attributes="0"/>
                                       <EmptySpace max="32767" attributes="0"/>
-                                      <Component id="btnIn" min="-2" max="-2" attributes="0"/>
+                                      <Component id="btnLogaritmoNeperiano" min="-2" max="-2" attributes="0"/>
                                   </Group>
                                   <Group type="102" alignment="1" attributes="0">
                                       <Component id="btnDivision" min="-2" max="-2" attributes="0"/>
@@ -111,7 +111,7 @@
                                   <Group type="102" alignment="1" attributes="0">
                                       <Component id="btnTangente" min="-2" max="-2" attributes="0"/>
                                       <EmptySpace max="32767" attributes="0"/>
-                                      <Component id="btnLog" min="-2" max="-2" attributes="0"/>
+                                      <Component id="btnLogaritmoEnBase10" min="-2" max="-2" attributes="0"/>
                                   </Group>
                               </Group>
                               <EmptySpace type="separate" max="-2" attributes="0"/>
@@ -202,11 +202,11 @@
                       <Group type="103" groupAlignment="3" attributes="0">
                           <Component id="btnCoseno" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="rbHexadecimal" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="btnIn" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="btnLogaritmoNeperiano" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="btnLog" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="btnLogaritmoEnBase10" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="btnTangente" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="rbOctal" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
@@ -327,7 +327,7 @@
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnRaizCuActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JButton" name="btnLog">
+    <Component class="javax.swing.JButton" name="btnLogaritmoEnBase10">
       <Properties>
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="33" green="33" red="33" type="rgb"/>
@@ -344,7 +344,7 @@
         </Property>
       </Properties>
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnLogActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnLogaritmoEnBase10ActionPerformed"/>
       </Events>
     </Component>
     <Component class="javax.swing.JButton" name="btnDivision">
@@ -907,7 +907,7 @@
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnSenoActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JButton" name="btnIn">
+    <Component class="javax.swing.JButton" name="btnLogaritmoNeperiano">
       <Properties>
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="33" green="33" red="33" type="rgb"/>
@@ -924,7 +924,7 @@
         </Property>
       </Properties>
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnInActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnLogaritmoNeperianoActionPerformed"/>
       </Events>
     </Component>
   </SubComponents>
