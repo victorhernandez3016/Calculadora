@@ -34,6 +34,7 @@ public class frmAutor extends javax.swing.JFrame {
         jTextField4 = new javax.swing.JTextField();
 
         setTitle("AUTOR:");
+        setResizable(false);
 
         jTextField1.setText("NOMBRE: Víctor Antonio Hernández Paredes.");
 

@@ -50,7 +50,7 @@
                                               <EmptySpace max="-2" attributes="0"/>
                                               <Component id="btnPotencia" min="-2" max="-2" attributes="0"/>
                                               <EmptySpace max="-2" attributes="0"/>
-                                              <Component id="btnInversoNum" min="-2" max="-2" attributes="0"/>
+                                              <Component id="btnInverso" min="-2" max="-2" attributes="0"/>
                                           </Group>
                                           <Group type="102" attributes="0">
                                               <Component id="btnSuma" min="-2" max="-2" attributes="0"/>
@@ -155,7 +155,7 @@
                       <Group type="103" groupAlignment="3" attributes="0">
                           <Component id="btnCuadrado" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="btnPotencia" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="btnInversoNum" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="btnInverso" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
@@ -493,12 +493,12 @@
           <Color blue="33" green="33" red="33" type="rgb"/>
         </Property>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="Tahoma" size="12" style="1"/>
+          <Font name="Tahoma" size="11" style="1"/>
         </Property>
         <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="ff" green="ff" red="ff" type="rgb"/>
         </Property>
-        <Property name="text" type="java.lang.String" value="x 2"/>
+        <Property name="text" type="java.lang.String" value="x^2"/>
         <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
           <Dimension value="[55, 30]"/>
         </Property>
@@ -513,12 +513,12 @@
           <Color blue="33" green="33" red="33" type="rgb"/>
         </Property>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="Tahoma" size="12" style="1"/>
+          <Font name="Tahoma" size="11" style="1"/>
         </Property>
         <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="ff" green="ff" red="ff" type="rgb"/>
         </Property>
-        <Property name="text" type="java.lang.String" value="x y"/>
+        <Property name="text" type="java.lang.String" value="x^y"/>
         <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
           <Dimension value="[55, 30]"/>
         </Property>
@@ -527,7 +527,7 @@
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnPotenciaActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JButton" name="btnInversoNum">
+    <Component class="javax.swing.JButton" name="btnInverso">
       <Properties>
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="33" green="33" red="33" type="rgb"/>
@@ -544,7 +544,7 @@
         </Property>
       </Properties>
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnInversoNumActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnInversoActionPerformed"/>
       </Events>
     </Component>
     <Component class="javax.swing.JButton" name="btnSeis">

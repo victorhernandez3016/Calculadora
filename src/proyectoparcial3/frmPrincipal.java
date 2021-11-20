@@ -44,7 +44,7 @@ public class frmPrincipal extends javax.swing.JFrame {
         btnSuma = new javax.swing.JButton();
         btnCuadrado = new javax.swing.JButton();
         btnPotencia = new javax.swing.JButton();
-        btnInversoNum = new javax.swing.JButton();
+        btnInverso = new javax.swing.JButton();
         btnSeis = new javax.swing.JButton();
         btnSiete = new javax.swing.JButton();
         btnOcho = new javax.swing.JButton();
@@ -207,9 +207,9 @@ public class frmPrincipal extends javax.swing.JFrame {
         });
 
         btnCuadrado.setBackground(new java.awt.Color(51, 51, 51));
-        btnCuadrado.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        btnCuadrado.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         btnCuadrado.setForeground(new java.awt.Color(255, 255, 255));
-        btnCuadrado.setText("x 2");
+        btnCuadrado.setText("x^2");
         btnCuadrado.setPreferredSize(new java.awt.Dimension(55, 30));
         btnCuadrado.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -218,9 +218,9 @@ public class frmPrincipal extends javax.swing.JFrame {
         });
 
         btnPotencia.setBackground(new java.awt.Color(51, 51, 51));
-        btnPotencia.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        btnPotencia.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         btnPotencia.setForeground(new java.awt.Color(255, 255, 255));
-        btnPotencia.setText("x y");
+        btnPotencia.setText("x^y");
         btnPotencia.setPreferredSize(new java.awt.Dimension(55, 30));
         btnPotencia.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -228,14 +228,14 @@ public class frmPrincipal extends javax.swing.JFrame {
             }
         });
 
-        btnInversoNum.setBackground(new java.awt.Color(51, 51, 51));
-        btnInversoNum.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        btnInversoNum.setForeground(new java.awt.Color(255, 255, 255));
-        btnInversoNum.setText("1/x");
-        btnInversoNum.setPreferredSize(new java.awt.Dimension(55, 30));
-        btnInversoNum.addActionListener(new java.awt.event.ActionListener() {
+        btnInverso.setBackground(new java.awt.Color(51, 51, 51));
+        btnInverso.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        btnInverso.setForeground(new java.awt.Color(255, 255, 255));
+        btnInverso.setText("1/x");
+        btnInverso.setPreferredSize(new java.awt.Dimension(55, 30));
+        btnInverso.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnInversoNumActionPerformed(evt);
+                btnInversoActionPerformed(evt);
             }
         });
 
@@ -476,7 +476,7 @@ public class frmPrincipal extends javax.swing.JFrame {
                                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                                 .addComponent(btnPotencia, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                                .addComponent(btnInversoNum, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                                .addComponent(btnInverso, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                                             .addGroup(layout.createSequentialGroup()
                                                 .addComponent(btnSuma, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -555,7 +555,7 @@ public class frmPrincipal extends javax.swing.JFrame {
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(btnCuadrado, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(btnPotencia, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(btnInversoNum, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(btnInverso, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(btnSeis, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -613,7 +613,7 @@ public class frmPrincipal extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnBorrarTodoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBorrarTodoActionPerformed
-        // TODO add your handling code here:
+        txtResultados.setText(" ");
     }//GEN-LAST:event_btnBorrarTodoActionPerformed
 
     private void btnBorrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBorrarActionPerformed
@@ -641,31 +641,44 @@ public class frmPrincipal extends javax.swing.JFrame {
     }//GEN-LAST:event_btnResiduoActionPerformed
 
     private void btnCuadradoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCuadradoActionPerformed
-        // TODO add your handling code here:
+        String val = txtResultados.getText();
+        double n= Double.parseDouble(val);
+        txtResultados.setText(String.valueOf(Math.pow(n,2)));
     }//GEN-LAST:event_btnCuadradoActionPerformed
 
     private void btnPotenciaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnPotenciaActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_btnPotenciaActionPerformed
 
-    private void btnInversoNumActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnInversoNumActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_btnInversoNumActionPerformed
+    private void btnInversoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnInversoActionPerformed
+        String val = txtResultados.getText();
+        double n= Double.parseDouble(val);
+        n= 1 / n;
+        txtResultados.setText(String.valueOf(n));
+    }//GEN-LAST:event_btnInversoActionPerformed
 
     private void btnRaizCuActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRaizCuActionPerformed
-        // TODO add your handling code here:
+        String val = txtResultados.getText();
+        double n= Double.parseDouble(val);
+        txtResultados.setText(String.valueOf(Math.sqrt(n)));
     }//GEN-LAST:event_btnRaizCuActionPerformed
 
     private void btnCosenoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCosenoActionPerformed
-        // TODO add your handling code here:
+        double n = Double.parseDouble(txtResultados.getText());
+        double x = Math.toRadians(n);
+        txtResultados.setText(String.valueOf(Math.cos(x)));
     }//GEN-LAST:event_btnCosenoActionPerformed
 
     private void btnSenoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSenoActionPerformed
-        // TODO add your handling code here:
+        double n = Double.parseDouble(txtResultados.getText());
+        double x = Math.toRadians(n);
+        txtResultados.setText(String.valueOf(Math.sin(x)));
     }//GEN-LAST:event_btnSenoActionPerformed
 
     private void btnTangenteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnTangenteActionPerformed
-        // TODO add your handling code here:
+        double n = Double.parseDouble(txtResultados.getText());
+        double x = Math.toRadians(n);
+        txtResultados.setText(String.valueOf(Math.tan(x)));
     }//GEN-LAST:event_btnTangenteActionPerformed
 
     private void btnInActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnInActionPerformed
@@ -685,67 +698,83 @@ public class frmPrincipal extends javax.swing.JFrame {
     }//GEN-LAST:event_btnIgualActionPerformed
 
     private void rbBinarioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rbBinarioActionPerformed
-        // TODO add your handling code here:
+        rbOctal.setSelected(false);
+        rbHexadecimal.setSelected(false);
+        int n = Integer.parseInt(txtResultados.getText());
+        String binario = Long.toBinaryString(n);
+        txtResultados.setText(binario);
     }//GEN-LAST:event_rbBinarioActionPerformed
 
     private void rbHexadecimalActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rbHexadecimalActionPerformed
-        // TODO add your handling code here:
+        rbOctal.setSelected(false);
+        rbBinario.setSelected(false);
+        int n = Integer.parseInt(txtResultados.getText());
+        String hexadecimal = Integer.toHexString(n);
+        txtResultados.setText(hexadecimal);
     }//GEN-LAST:event_rbHexadecimalActionPerformed
 
     private void rbOctalActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rbOctalActionPerformed
-        // TODO add your handling code here:
+        rbHexadecimal.setSelected(false);
+        rbBinario.setSelected(false);
+        int n = Integer.parseInt(txtResultados.getText());
+        String octal = Integer. toOctalString(n);
+        txtResultados.setText(octal);
     }//GEN-LAST:event_rbOctalActionPerformed
 
     private void btnAutorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAutorActionPerformed
-        // TODO add your handling code here:
+        frmAutor autor = new frmAutor();
+        autor.setVisible(true);
     }//GEN-LAST:event_btnAutorActionPerformed
 
     private void btnMasMenosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnMasMenosActionPerformed
-        // TODO add your handling code here:
+        String val = txtResultados.getText();
+        double n= Double.parseDouble(val);
+        n= n * -1;
+        txtResultados.setText(String.valueOf(n));
     }//GEN-LAST:event_btnMasMenosActionPerformed
 
     private void btnPuntoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnPuntoActionPerformed
-        // TODO add your handling code here:
+        txtResultados.append(".");
     }//GEN-LAST:event_btnPuntoActionPerformed
 
     private void btnCeroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCeroActionPerformed
-        // TODO add your handling code here:
+        txtResultados.append("0");
     }//GEN-LAST:event_btnCeroActionPerformed
 
     private void btnUnoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnUnoActionPerformed
-        // TODO add your handling code here:
+        txtResultados.append("1");
     }//GEN-LAST:event_btnUnoActionPerformed
 
     private void btnDosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnDosActionPerformed
-        // TODO add your handling code here:
+        txtResultados.append("2");
     }//GEN-LAST:event_btnDosActionPerformed
 
     private void btnTresActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnTresActionPerformed
-        // TODO add your handling code here:
+        txtResultados.append("3");
     }//GEN-LAST:event_btnTresActionPerformed
 
     private void btnCuatroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCuatroActionPerformed
-        // TODO add your handling code here:
+        txtResultados.append("4");
     }//GEN-LAST:event_btnCuatroActionPerformed
 
     private void btnCincoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCincoActionPerformed
-        // TODO add your handling code here:
+        txtResultados.append("5");
     }//GEN-LAST:event_btnCincoActionPerformed
 
     private void btnSeisActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSeisActionPerformed
-        // TODO add your handling code here:
+        txtResultados.append("6");
     }//GEN-LAST:event_btnSeisActionPerformed
 
     private void btnSieteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSieteActionPerformed
-        // TODO add your handling code here:
+        txtResultados.append("7");
     }//GEN-LAST:event_btnSieteActionPerformed
 
     private void btnOchoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnOchoActionPerformed
-        // TODO add your handling code here:
+        txtResultados.append("8");
     }//GEN-LAST:event_btnOchoActionPerformed
 
     private void btnNueveActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnNueveActionPerformed
-        // TODO add your handling code here:
+        txtResultados.append("9");
     }//GEN-LAST:event_btnNueveActionPerformed
 
     /**
@@ -796,7 +825,7 @@ public class frmPrincipal extends javax.swing.JFrame {
     private javax.swing.JButton btnDos;
     private javax.swing.JButton btnIgual;
     private javax.swing.JButton btnIn;
-    private javax.swing.JButton btnInversoNum;
+    private javax.swing.JButton btnInverso;
     private javax.swing.JButton btnLog;
     private javax.swing.JButton btnMasMenos;
     private javax.swing.JButton btnMultiplicacion;
