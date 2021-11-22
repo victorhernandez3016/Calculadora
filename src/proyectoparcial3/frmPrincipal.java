@@ -26,7 +26,7 @@ public class frmPrincipal extends javax.swing.JFrame {
         if (numero == 0){
             return 1;
         } else {
-            return numero * factorial(numero - 1);
+            return numero * factorial(numero -1);
         }
     }
 
