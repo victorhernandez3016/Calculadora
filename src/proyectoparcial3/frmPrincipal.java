@@ -65,6 +65,7 @@ public class frmPrincipal extends javax.swing.JFrame {
         btnSeno = new javax.swing.JButton();
         btnLogaritmoNeperiano = new javax.swing.JButton();
         btnPI = new javax.swing.JButton();
+        btnCubo = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Calculadora - Víctor Antonio");
@@ -212,7 +213,7 @@ public class frmPrincipal extends javax.swing.JFrame {
         });
 
         btnCuadrado.setBackground(new java.awt.Color(51, 51, 51));
-        btnCuadrado.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        btnCuadrado.setFont(new java.awt.Font("Tahoma", 0, 8)); // NOI18N
         btnCuadrado.setForeground(new java.awt.Color(255, 255, 255));
         btnCuadrado.setText("x^2");
         btnCuadrado.setPreferredSize(new java.awt.Dimension(55, 30));
@@ -223,7 +224,7 @@ public class frmPrincipal extends javax.swing.JFrame {
         });
 
         btnPotencia.setBackground(new java.awt.Color(51, 51, 51));
-        btnPotencia.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        btnPotencia.setFont(new java.awt.Font("Tahoma", 0, 8)); // NOI18N
         btnPotencia.setForeground(new java.awt.Color(255, 255, 255));
         btnPotencia.setText("x^y");
         btnPotencia.setPreferredSize(new java.awt.Dimension(55, 30));
@@ -234,7 +235,7 @@ public class frmPrincipal extends javax.swing.JFrame {
         });
 
         btnInverso.setBackground(new java.awt.Color(51, 51, 51));
-        btnInverso.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        btnInverso.setFont(new java.awt.Font("Tahoma", 1, 8)); // NOI18N
         btnInverso.setForeground(new java.awt.Color(255, 255, 255));
         btnInverso.setText("1/x");
         btnInverso.setPreferredSize(new java.awt.Dimension(55, 30));
@@ -466,6 +467,17 @@ public class frmPrincipal extends javax.swing.JFrame {
             }
         });
 
+        btnCubo.setBackground(new java.awt.Color(51, 51, 51));
+        btnCubo.setFont(new java.awt.Font("Tahoma", 0, 8)); // NOI18N
+        btnCubo.setForeground(new java.awt.Color(255, 255, 255));
+        btnCubo.setText("x^3");
+        btnCubo.setPreferredSize(new java.awt.Dimension(55, 30));
+        btnCubo.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnCuboActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -486,21 +498,24 @@ public class frmPrincipal extends javax.swing.JFrame {
                                 .addComponent(btnNueve, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
                                 .addGap(7, 7, 7)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                    .addComponent(btnSuma, javax.swing.GroupLayout.DEFAULT_SIZE, 47, Short.MAX_VALUE)
+                                    .addComponent(btnCubo, javax.swing.GroupLayout.PREFERRED_SIZE, 1, Short.MAX_VALUE))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                    .addComponent(btnResta, javax.swing.GroupLayout.DEFAULT_SIZE, 47, Short.MAX_VALUE)
+                                    .addComponent(btnCuadrado, javax.swing.GroupLayout.PREFERRED_SIZE, 1, Short.MAX_VALUE))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                                     .addGroup(layout.createSequentialGroup()
-                                        .addComponent(btnSuma, javax.swing.GroupLayout.PREFERRED_SIZE, 47, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(btnResta, javax.swing.GroupLayout.PREFERRED_SIZE, 47, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                         .addComponent(btnMultiplicacion, javax.swing.GroupLayout.PREFERRED_SIZE, 47, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addGap(7, 7, 7)
-                                        .addComponent(btnPI, javax.swing.GroupLayout.PREFERRED_SIZE, 47, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                        .addGap(7, 7, 7))
                                     .addGroup(layout.createSequentialGroup()
-                                        .addComponent(btnCuadrado, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                        .addComponent(btnPotencia, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                        .addComponent(btnInverso, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                                        .addComponent(btnPotencia, javax.swing.GroupLayout.PREFERRED_SIZE, 1, Short.MAX_VALUE)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)))
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                    .addComponent(btnInverso, javax.swing.GroupLayout.PREFERRED_SIZE, 1, Short.MAX_VALUE)
+                                    .addComponent(btnPI, javax.swing.GroupLayout.DEFAULT_SIZE, 47, Short.MAX_VALUE)))
                             .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
                                 .addComponent(btnDos, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -565,12 +580,7 @@ public class frmPrincipal extends javax.swing.JFrame {
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(36, 36, 36)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(btnCuadrado, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(btnPotencia, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(btnInverso, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGap(73, 73, 73)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(btnSeis, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(btnSiete, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -602,7 +612,11 @@ public class frmPrincipal extends javax.swing.JFrame {
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                                     .addComponent(btnRaizCu, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addComponent(rbBinario, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(btnSeno, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                    .addComponent(btnSeno, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(btnInverso, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(btnPotencia, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(btnCuadrado, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(btnCubo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                                 .addComponent(btnBorrarTodo, javax.swing.GroupLayout.DEFAULT_SIZE, 35, Short.MAX_VALUE)
                                 .addComponent(btnBorrar, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)))
@@ -799,6 +813,12 @@ public class frmPrincipal extends javax.swing.JFrame {
         txtResultados.setText(String.valueOf(Math.PI));
     }//GEN-LAST:event_btnPIActionPerformed
 
+    private void btnCuboActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCuboActionPerformed
+        String val = txtResultados.getText();
+        double n= Double.parseDouble(val);
+        txtResultados.setText(String.valueOf(Math.pow(n,3)));
+    }//GEN-LAST:event_btnCuboActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -843,6 +863,7 @@ public class frmPrincipal extends javax.swing.JFrame {
     private javax.swing.JButton btnCoseno;
     private javax.swing.JButton btnCuadrado;
     private javax.swing.JButton btnCuatro;
+    private javax.swing.JButton btnCubo;
     private javax.swing.JButton btnDivision;
     private javax.swing.JButton btnDos;
     private javax.swing.JButton btnIgual;
