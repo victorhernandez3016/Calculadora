@@ -38,7 +38,7 @@ public class frmAutor extends javax.swing.JFrame {
 
         lblVersion.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         lblVersion.setForeground(new java.awt.Color(255, 255, 255));
-        lblVersion.setText("VESIÓN: 1.3");
+        lblVersion.setText("VESIÓN: V1.3");
 
         lblFecha.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         lblFecha.setForeground(new java.awt.Color(255, 255, 255));

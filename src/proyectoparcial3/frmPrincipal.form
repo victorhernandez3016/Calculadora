@@ -89,7 +89,7 @@
                       <EmptySpace max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="1" attributes="0">
                           <Group type="102" attributes="0">
-                              <Component id="jButton9" min="-2" max="-2" attributes="0"/>
+                              <Component id="btnFactorial" min="-2" max="-2" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
                               <Component id="btnIgual" min="-2" pref="55" max="-2" attributes="0"/>
                               <EmptySpace type="separate" max="-2" attributes="0"/>
@@ -114,7 +114,7 @@
                                       </Group>
                                       <EmptySpace max="-2" attributes="0"/>
                                       <Group type="103" groupAlignment="0" attributes="0">
-                                          <Component id="btnResiduo" min="-2" max="-2" attributes="0"/>
+                                          <Component id="btnProcentaje" min="-2" max="-2" attributes="0"/>
                                           <Component id="btnRaizCu" min="-2" max="-2" attributes="0"/>
                                       </Group>
                                   </Group>
@@ -177,7 +177,7 @@
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Group type="102" attributes="0">
                               <Group type="103" groupAlignment="3" attributes="0">
-                                  <Component id="btnResiduo" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="btnProcentaje" alignment="3" min="-2" max="-2" attributes="0"/>
                                   <Component id="btnDivision" alignment="3" min="-2" max="-2" attributes="0"/>
                                   <Component id="btnMultiplicacion" alignment="3" min="-2" max="-2" attributes="0"/>
                                   <Component id="btnResta" alignment="3" min="-2" max="-2" attributes="0"/>
@@ -217,7 +217,7 @@
                           <Component id="btnIgual" max="32767" attributes="0"/>
                           <Group type="102" attributes="0">
                               <Group type="103" groupAlignment="0" attributes="0">
-                                  <Component id="jButton9" min="-2" max="-2" attributes="0"/>
+                                  <Component id="btnFactorial" min="-2" max="-2" attributes="0"/>
                                   <Component id="btnAutor" min="-2" max="-2" attributes="0"/>
                               </Group>
                               <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
@@ -289,7 +289,7 @@
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnBorrarActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JButton" name="btnResiduo">
+    <Component class="javax.swing.JButton" name="btnProcentaje">
       <Properties>
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="33" green="33" red="33" type="rgb"/>
@@ -306,7 +306,7 @@
         </Property>
       </Properties>
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnResiduoActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnProcentajeActionPerformed"/>
       </Events>
     </Component>
     <Component class="javax.swing.JButton" name="btnRaizCu">
@@ -409,7 +409,7 @@
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnTangenteActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JButton" name="jButton9">
+    <Component class="javax.swing.JButton" name="btnFactorial">
       <Properties>
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="33" green="33" red="33" type="rgb"/>
@@ -426,7 +426,7 @@
         </Property>
       </Properties>
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton9ActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnFactorialActionPerformed"/>
       </Events>
     </Component>
     <Component class="javax.swing.JButton" name="btnMultiplicacion">
