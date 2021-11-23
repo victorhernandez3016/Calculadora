@@ -783,7 +783,7 @@ public class frmPrincipal extends javax.swing.JFrame {
                 txtResultados.setText(String.valueOf(valor1 * valor2));
                 break;
                 
-            case "potencaXY":
+            case "potenciaXY":
                 txtResultados.setText(String.valueOf(Math.pow(valor1,valor2)));
                 break;
         }
@@ -800,17 +800,13 @@ public class frmPrincipal extends javax.swing.JFrame {
     private void rbHexadecimalActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rbHexadecimalActionPerformed
         rbOctal.setSelected(false);
         rbBinario.setSelected(false);
-        int n = Integer.parseInt(txtResultados.getText());
-        String hexadecimal = Integer.toHexString(n);
-        txtResultados.setText(hexadecimal);
+        txtResultados.setText(Integer.toHexString(Integer.parseInt(txtResultados.getText())));
     }//GEN-LAST:event_rbHexadecimalActionPerformed
 
     private void rbOctalActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rbOctalActionPerformed
         rbHexadecimal.setSelected(false);
         rbBinario.setSelected(false);
-        int n = Integer.parseInt(txtResultados.getText());
-        String octal = Integer.toOctalString(n);
-        txtResultados.setText(octal);
+        txtResultados.setText(Integer.toOctalString(Integer.parseInt(txtResultados.getText())));
     }//GEN-LAST:event_rbOctalActionPerformed
 
     private void btnAutorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAutorActionPerformed
