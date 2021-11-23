@@ -18,11 +18,11 @@ public class frmPrincipal extends javax.swing.JFrame {
     }
     
     //Método factorial//
-    public int factorial(int numero){
-        if (numero == 0){
+    public int factorial(int n){
+        if (n == 0){
             return 1;
         } else {
-            return numero * factorial(numero -1);
+            return n * factorial(n-1);
         }
     }
 
@@ -653,7 +653,7 @@ public class frmPrincipal extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnBorrarTodoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBorrarTodoActionPerformed
-        txtResultados.setText(" ");
+        txtResultados.setText("");
     }//GEN-LAST:event_btnBorrarTodoActionPerformed
 
     private void btnBorrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBorrarActionPerformed
@@ -750,7 +750,10 @@ public class frmPrincipal extends javax.swing.JFrame {
     }//GEN-LAST:event_btnLogaritmoEnBase10ActionPerformed
 
     private void btnFactorialActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnFactorialActionPerformed
-        txtResultados.setText(String.valueOf(factorial(Integer.parseInt(txtResultados.getText()))));
+        int valor =Integer.parseInt(txtResultados.getText());
+        int fact = factorial(valor);
+        String res =String.valueOf(fact);
+        txtResultados.setText(res);
     }//GEN-LAST:event_btnFactorialActionPerformed
 
     private void btnIgualActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnIgualActionPerformed
@@ -806,7 +809,7 @@ public class frmPrincipal extends javax.swing.JFrame {
         rbHexadecimal.setSelected(false);
         rbBinario.setSelected(false);
         int n = Integer.parseInt(txtResultados.getText());
-        String octal = Integer. toOctalString(n);
+        String octal = Integer.toOctalString(n);
         txtResultados.setText(octal);
     }//GEN-LAST:event_rbOctalActionPerformed
 
