@@ -773,7 +773,7 @@ public class frmPrincipal extends javax.swing.JFrame {
                 
             case "division":
                 if(valor2 == 0){
-                    txtResultados.setText("ERROR, la división por 0!");
+                    txtResultados.setText("ERROR, división por 0!");
                 }else{
                     txtResultados.setText(String.valueOf(valor1 / valor2));
                 }
